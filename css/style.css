@@ -9,6 +9,7 @@
     --dark: #404149;
     --gray: #999999;
     --white: #FFFFFF;
+    --black: #000;
 }
 
 body{
@@ -30,9 +31,96 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
 }
 
 .burger__btn{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     width: 50px;
     height: 50px;
+    border-radius: 2px;
+    background-color: var(--accent);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.burger__btn > .line{
+    width: 21px;
+    height: 4px;
+    background-color: var(--white);
+}
+
+/* Заголовок и описание в header */
+
+.header__title{
+    max-width: 734px;
+    text-align: center;
+    margin-left: 184px;
+    padding: 112px 0 320px 0;
+}
+
+.section__title{
+    font-size: 64px;
+    color: var(--white);
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.28px;
+}
+
+.header__slogan{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Стили для section с классом content */
+
+.wrapper{
+    position: relative;
+    left: 0;
+}
+
+.numbers{
+    position: absolute;
+    left: 100px;
+    bottom: -50px;
+    align-items: center;
+    max-width: 1110px;
+    background-color: #F7F7F7;
+    z-index: 5;
+}
+
+.grid_container_numbers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.item{
+    text-align: center;
+    width: 190px;
+}
+
+.count{
+    color: var(--accent);
+    font-size: 72px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+
+.years{
+    color: var(--black);
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.info__item{
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 500;
 }
