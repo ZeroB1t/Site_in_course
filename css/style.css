@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+
+*, *::after, :hover{
+    box-sizing: border-box;
+}
+
+:root{
+    --accent: #F7654A;
+    --dark: #404149;
+    --gray: #999999;
+    --white: #FFFFFF;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* Блок header */
+
+.header{
+    max-width: 100%;
+    background-image: url(../img/Rectangle.png);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger__btn{
+    width: 50px;
+    height: 50px;
+}
