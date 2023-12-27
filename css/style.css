@@ -174,3 +174,94 @@ body{
     line-height: normal;
     max-width: 350px;
 }
+
+.request{
+    background-color: var(--accent);
+    margin-top: 150px;
+}
+
+.communications__block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.communications__title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.communications__desc {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.communications__btn {
+    background-color: #fff;
+    padding: 14px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.communications__btn:hover{
+    background-color: #d6d4d4;
+}
+
+.communications__btn-img{
+    padding-right: 15px;
+}
+
+.bloc__services {
+    padding-top: 150px;
+}
+.block__services-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.grid__container__services {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    row-gap: 30px;
+    padding-top: 66px;
+    justify-content: center;
+}
+.grid__container-item{
+    background-color: #f7f7f7;
+    text-align: center;
+    justify-self: center;
+    padding: 59px 68px;
+}
+.grid__container-img {
+    padding-bottom: 30px;
+}
+.grid__container-title {
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 0.42px;
+    width: 172px;
+}
+
+.portfolio{
+    max-width: 100%;
+}
+
+.grid__portfolio{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 0;
+}
+
+.grid__portfolio-item{
+}
