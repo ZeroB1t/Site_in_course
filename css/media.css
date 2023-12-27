@@ -111,10 +111,16 @@
 
 
 @media screen and (max-width: 480px){
+    .header{
+        max-width: 100%;
+        text-align: center;
+    }
 
     .nav{
         padding: 20px 15px;
     }
+
+    
     .grid_container_numbers{
         grid-template-columns: repeat(1, 200px);
         justify-content: center;
@@ -168,7 +174,7 @@
     }
 
     .grid__portfolio{
-        grid-template-columns: repeat(1, 100px);
+        grid-template-columns: repeat(1, 90px);
         grid-template-rows: auto;
         row-gap: 15px;
         margin-top: 100px;
@@ -210,6 +216,7 @@
     .communications__block{
         flex-direction: column;
         padding: 30px 15px;
+        text-align: center;
     }
 
     .communications__title{
@@ -242,6 +249,7 @@
     }
 
     .grid__portfolio-item{
+        width: 300px;
         justify-self: center;
     }
 }

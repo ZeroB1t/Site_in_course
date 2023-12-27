@@ -258,10 +258,15 @@ body{
 
 .grid__portfolio{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25%);
     justify-items: center;
     gap: 0;
 }
 
 .grid__portfolio-item{
+    align-items: center;
+}
+
+.grid__portfolio-item > img{
+    
 }
