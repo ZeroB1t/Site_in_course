@@ -1,4 +1,8 @@
 @media screen and (max-width: 1200px){
+
+    .nav{
+        padding: 20px 15px;
+    }
     .grid_container_numbers{
         grid-template-columns: repeat(2, 200px);
         grid-template-rows: repeat(2, 1fr);
@@ -9,5 +13,18 @@
         position: relative;
         max-width: 900px;
         padding: 67px;
+    }
+
+    .about__projects {
+        padding-top: 25px;
+        margin: 0 auto;
+    }
+
+    .grid__about{
+        grid-template-columns: 1fr;
+    }
+
+    .about__grid-item{
+        justify-self: center;
     }
 }
