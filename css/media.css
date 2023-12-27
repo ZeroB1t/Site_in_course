@@ -43,7 +43,7 @@
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(4, 1fr);
-        row-gap: 15px;
+        row-gap: 0;
     }
 }
 
@@ -99,6 +99,143 @@
 
     .grid__portfolio{
         grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+        row-gap: 0;
+        margin-top: 100px;
+    }
+
+    .grid__portfolio-item{
+        justify-self: center;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .nav{
+        padding: 20px 15px;
+    }
+    .grid_container_numbers{
+        grid-template-columns: repeat(1, 200px);
+        justify-content: center;
+    }
+
+    .numbers{
+        position: relative;
+        max-width: 900px;
+        padding: 67px;
+    }
+
+    .about__projects {
+        padding-top: 25px;
+        margin: 0 auto;
+    }
+
+    .grid__about{
+        grid-template-columns: 1fr;
+    }
+
+    .about__grid-item{
+        justify-self: center;
+    }
+
+    .communications__block{
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .communications__title{
+        text-align: center;
+    }
+
+    .communications__btn{
+        margin: 0 auto;
+    }
+
+    .grid__container__services {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 66px;
+        justify-content: center;
+        gap: 5px 5px;
+    }
+
+    .grid__container-item{
+        background-color: #f7f7f7;
+        text-align: center;
+        justify-self: center;
+        padding: 30px 20px;
+    }
+
+    .grid__portfolio{
+        grid-template-columns: repeat(1, 100px);
+        grid-template-rows: auto;
+        row-gap: 15px;
+        margin-top: 100px;
+    }
+
+    .grid__portfolio-item{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 330px){
+
+    .nav{
+        padding: 20px 15px;
+    }
+    .grid_container_numbers{
+        grid-template-columns: repeat(1, 200px);
+        justify-content: center;
+    }
+
+    .numbers{
+        position: relative;
+        max-width: 900px;
+        padding: 67px;
+    }
+
+    .about__projects {
+        padding-top: 25px;
+        margin: 0 auto;
+    }
+
+    .grid__about{
+        grid-template-columns: 1fr;
+    }
+
+    .about__grid-item{
+        justify-self: center;
+    }
+
+    .communications__block{
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .communications__title{
+        text-align: center;
+    }
+
+    .communications__btn{
+        margin: 0 auto;
+    }
+
+    .grid__container__services {
+        grid-template-columns: repeat(1, 200px);
+        padding-top: 66px;
+        justify-content: center;
+        gap: 5px 5px;
+    }
+
+    .grid__container-item{
+        background-color: #f7f7f7;
+        text-align: center;
+        justify-self: center;
+        padding: 30px 20px;
+    }
+
+    .grid__portfolio{
+        grid-template-columns: repeat(1, 50px);
         grid-template-rows: auto;
         row-gap: 15px;
         margin-top: 100px;
