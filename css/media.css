@@ -91,10 +91,15 @@
     }
 
     .grid__container__services {
-        grid-template-columns: repeat(2, 350px);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 350px);
         padding-top: 66px;
         justify-content: center;
+    }
+
+    .grid__container-item{
+        background-color: #f7f7f7;
+        text-align: center;
+        justify-self: center;
     }
 
     .grid__portfolio{
@@ -159,32 +164,31 @@
     }
 
     .grid__container__services {
-        grid-template-columns: repeat(2, 200px);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 200px);
         padding-top: 66px;
         justify-content: center;
         gap: 5px 5px;
     }
 
-    .grid__container-item{
-        background-color: #f7f7f7;
-        text-align: center;
-        justify-self: center;
-        padding: 30px 20px;
+    .grid__portfolio{
+        display: flex;
+        flex-direction: column;
     }
 
-    .grid__portfolio{
-        grid-template-columns: repeat(1, 90px);
-        grid-template-rows: auto;
-        row-gap: 15px;
-        margin-top: 100px;
+    .img-portfolio{
+        max-width: 100%;
     }
 
     .grid__portfolio-item{
-        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 330px){
+
+    .section__title{
+        font-size: 30px;
+    }
 
     .nav{
         padding: 20px 15px;
@@ -206,7 +210,12 @@
     }
 
     .grid__about{
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
+        row-gap: 30px;
+    }
+
+    .grid__img-item{
+        max-width: 100%;
     }
 
     .about__grid-item{
@@ -225,31 +234,5 @@
 
     .communications__btn{
         margin: 0 auto;
-    }
-
-    .grid__container__services {
-        grid-template-columns: repeat(1, 200px);
-        padding-top: 66px;
-        justify-content: center;
-        gap: 5px 5px;
-    }
-
-    .grid__container-item{
-        background-color: #f7f7f7;
-        text-align: center;
-        justify-self: center;
-        padding: 30px 20px;
-    }
-
-    .grid__portfolio{
-        grid-template-columns: repeat(1, 50px);
-        grid-template-rows: auto;
-        row-gap: 15px;
-        margin-top: 100px;
-    }
-
-    .grid__portfolio-item{
-        width: 300px;
-        justify-self: center;
     }
 }

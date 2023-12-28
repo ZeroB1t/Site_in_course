@@ -13,6 +13,7 @@
 }
 
 body{
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Oswald', sans-serif;
 }
@@ -258,15 +259,9 @@ body{
 
 .grid__portfolio{
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-items: center;
+    grid-template-columns: repeat(2, 480px);
     gap: 0;
-}
-
-.grid__portfolio-item{
-    align-items: center;
-}
-
-.grid__portfolio-item > img{
-    
+    justify-content: center;
+    gap: 15px;
+    margin-top: 100px;
 }
